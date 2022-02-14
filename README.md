@@ -2,8 +2,8 @@
 
 This application allows user to search books utalising OpenLibrary API.
 
--![Alt Text](openlibraryapi.gif)
--
+![Alt Text](openlibraryapi.gif)
+
 
 # Technologies Used:
     * React Js
