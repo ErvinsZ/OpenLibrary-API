@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import Button from './components/Button'
 import Input from './components/Input'
+import BookList from './components/BookList';
 
 function App() {
    const [books, setBooks] = useState([])
@@ -36,6 +37,7 @@ function App() {
     <>
       <Input value={inputValue} onChange={(e) => setInputValue(e.target.value)}/>
       <Button onClick={fetchBooks}/>
+      <BookList books ={books}/>
     </>
   );
 }
