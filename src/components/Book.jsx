@@ -1,5 +1,6 @@
 import placeholder from '../assets/book_cover_placeholder.png'
 const Book = (props) => {
+    //Handeling cases when there is no cover_id. 
     let bookcover
     if (props.cover_id == null){
          bookcover = placeholder

@@ -62,16 +62,18 @@ function App() {
   }
     
   return (
-    <>
-      <Input value={inputValue} onChange={(e) => setInputValue(e.target.value)}/>
-      <Button onClick={fetchBooks}/>
+    <div className='wrapper'>
+      <div className='search-wrapper'>
+        <Input value={inputValue} onChange={(e) => setInputValue(e.target.value)}/>
+        <Button onClick={fetchBooks}/>
+      </div>
       {inputError && <InputErrorMessage/>}
       {error ? error:
       notFound ? <NotFound/>:
       loading ? <Loading/> :
       <BookList books ={books}/>
       }
-    </>
+    </div>
   );
 }
 

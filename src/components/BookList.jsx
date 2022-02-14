@@ -1,4 +1,5 @@
 import Book from './Book'
+//Mapping through the received books and passing it down to Book component
 const BookList = (props) => {
     return(
         <div className='book-list-wrapper'>
