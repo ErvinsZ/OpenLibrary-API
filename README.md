@@ -10,12 +10,14 @@ This application allows user to search books utalising OpenLibrary API.
         * Functional components
 
 # Implementation :
-The project is divided in three major parts: 
+The project is divided in three major parts:
+
     * App.js, - all states are updated and 'fetchBooks' function is being executed
     * BookList.jsx - received books are being mapped and passed further as props
     * Book.jsx - each book info(as stated above received from props) is being displayed. 
 
 Errors are being handled in three cases:
+
     * Unsuccessful api call
     * User submitting empty input field
     * No books found from the given search term
